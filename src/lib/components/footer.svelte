@@ -44,10 +44,11 @@
 						fill="#00207D"
 					/>
 				</svg>
-				<div>hello@novus.studio</div>
+				<div>hello@miraclebrand.co</div>
 			</div>
 		</div>
 	</div>
+	<hr />
 	<div class="footer-disclaimer">
 		<p>
 			<b>Disclaimer</b>: this is an advertisement, using a fictional customer but discussing
@@ -79,6 +80,13 @@
 		padding: 66px 165px 42px 165px;
 		background-color: #e4f2fb;
 		color: var(--primary);
+	}
+	footer hr {
+		border-top: 1px solid var(--primary);
+		opacity: 0.2;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		display: none;
 	}
 	footer .footer-info {
 		display: flex;
@@ -129,5 +137,39 @@
 	footer .footer-copyright .footer-links {
 		display: flex;
 		gap: 32px;
+	}
+	@media (max-width: 768px) {
+		footer {
+			padding: 50px 19px 60px 26px;
+		}
+	footer hr {
+		display: block;
+	}
+		footer .footer-info {
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 35px;
+			padding-top: 50px;
+		}
+		footer .footer-info .footer-info__company .footer-info__company-content {
+			gap: 60px;
+		}
+		footer .footer-info .footer-info__support .title {
+			text-align: left;
+		}
+		footer .footer-info .footer-info__support .content {
+			gap: 12px;
+		}
+		footer .footer-disclaimer {
+			padding-top: 0px;
+		}
+		footer .footer-copyright {
+			flex-direction: column-reverse;
+			gap: 23px;
+		}
+		footer .footer-copyright .footer-links {
+			display: flex;
+			gap: 32px;
+		}
 	}
 </style>

@@ -13,8 +13,7 @@
 	.richtext {
 		background-color: var(--primary);
 		color: white;
-		padding-top: 44px;
-		padding-bottom: 34px;
+		padding: 44px 27px 34px;
 		text-align: center;
 	}
 	/* Add additional styles for the richtext class */
@@ -30,5 +29,23 @@
 		margin: 0px;
 		font-weight: 300;
 		line-height: 22px;
+	}
+	@media (max-width: 768px) {
+		.richtext {
+			padding-top: 27px;
+			padding-bottom: 23px;
+		}
+		.richtext h1 {
+			font-size: 28px;
+			padding-bottom: 20px;
+			line-height: 36px;
+		}
+		.richtext p {
+			font-size: 18px;
+			padding-bottom: 8px;
+		}
+		.richtext svg {
+			width: 23px;
+		}
 	}
 </style>

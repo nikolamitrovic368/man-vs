@@ -68,14 +68,14 @@
 		align-items: center;
 		flex-direction: column;
 		background-color: var(--primary);
-        gap: 16px;
+		gap: 16px;
 	}
 	.image-with-text--odd .image-with-text__text {
 		background-color: #e4f2fb;
 	}
 	.image-with-text .image-with-text__text h2 {
 		color: white;
-        margin: 0;
+		margin: 0;
 		padding-inline: 110px;
 		font-size: 38px;
 		font-weight: 700;
@@ -87,12 +87,44 @@
 	}
 	.image-with-text .image-with-text__text p {
 		color: white;
-        margin: 0;
+		margin: 0;
 		padding-inline: 110px;
 		font-size: 18px;
 		font-weight: 400;
 	}
 	.image-with-text--odd .image-with-text__text p {
 		color: #333b47;
+	}
+	@media (max-width: 768px) {
+		.image-with-text {
+			flex-direction: column;
+			height: auto;
+		}
+		.image-with-text img {
+			height: 350px;
+			width: 100%;
+		}
+		.image-with-text .image-with-text__text {
+			width: 100%;
+			padding-block: 40px;
+		}
+		.image-with-text .image-with-text__text h2 {
+			padding-left: 34px;
+			padding-right: 14px;
+			font-size: 32px;
+			line-height: 36px; /* 121.053% */
+			letter-spacing: -0.6px;
+		}
+		.image-with-text .image-with-text__text p {
+			color: white;
+			margin: 0;
+			padding-left: 34px;
+			padding-right: 34px;
+			font-size: 18px;
+			font-weight: 400;
+		}
+		.image-with-text--odd .image-with-text__text p {
+			color: #333b47;
+		}
 	}
 </style>

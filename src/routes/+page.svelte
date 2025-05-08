@@ -18,4 +18,11 @@
 		object-fit: cover;
 		line-height: 0;
 	}
+
+	@media (max-width: 768px) {
+		.banner {
+			height: 227px;
+			object-position: left;
+		}
+	}
 </style>

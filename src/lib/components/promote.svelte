@@ -15,6 +15,7 @@
 				<span class="promote-content__desc-danger">limited time deal</span> is in high demand and stock
 				keeps selling out.
 			</div>
+			<img src={miracle} alt="Miracle" class="promote-image-mobile" />
 			<button>
 				<svg
 					width="20"
@@ -212,5 +213,57 @@
 	.promote .promote-content .promote-content__action .danger {
 		color: var(--danger);
 		font-weight: 800;
+	}
+
+	@media (max-width: 768px) {
+		.promote {
+			flex-direction: column-reverse;
+			margin-left: 34px;
+			margin-right: 34px;
+			width: auto;
+			margin-top: 49px;
+			margin-bottom: 48px;
+			padding: 43px 25px 32px 24px;
+		}
+		.promote .promote-image {
+			display: none;
+		}
+		.promote .promote-image-mobile {
+			width: 120%;
+			object-fit: contain;
+		}
+		.promote .promote-content {
+			flex: 1 1 0%;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.promote .promote-content h2 {
+			margin-top: 0;
+			margin-bottom: 16px;
+		}
+		.promote .promote-content .promote-content__desc {
+			padding-inline: 12px;
+			padding-bottom: 8px;
+		}
+		.promote .promote-content .promote-content__desc-danger {
+			color: var(--danger);
+			font-weight: 700;
+		}
+		.promote .promote-content button {
+			padding: 18px 12px;
+			border-radius: 8px;
+			font-size: 16px;
+		}
+		.promote .promote-content .promote-content__deal {
+			padding-top: 20px;
+			font-weight: 600;
+		}
+		.promote .promote-content .promote-content__time {
+			font-weight: 400;
+			padding-bottom: 8px;
+		}
 	}
 </style>
