@@ -5,7 +5,9 @@
 	import Richtext from '$lib/components/richtext.svelte'
 </script>
 
-<img alt="The project logo" src={bg} class="banner" />
+<div class="banner">
+	<img alt="The project logo" src={bg} />
+</div>
 
 <Richtext />
 <ImageWithText />
@@ -15,14 +17,22 @@
 	.banner {
 		width: 100%;
 		height: 470px;
+		overflow: hidden;
+	}
+	.banner img {
+		width: 100%;
+		height: 100%;
 		object-fit: cover;
 		line-height: 0;
+		object-position:top left;
 	}
 
 	@media (max-width: 768px) {
 		.banner {
 			height: 227px;
-			object-position: left;
+		}
+		.banner img {
+			height: 270px;
 		}
 	}
 </style>

@@ -215,6 +215,9 @@
 		font-weight: 800;
 	}
 
+	.promote .promote-image-mobile {
+		display: none;
+	}
 	@media (max-width: 768px) {
 		.promote {
 			flex-direction: column-reverse;
@@ -231,6 +234,7 @@
 		.promote .promote-image-mobile {
 			width: 120%;
 			object-fit: contain;
+			display: block;
 		}
 		.promote .promote-content {
 			flex: 1 1 0%;

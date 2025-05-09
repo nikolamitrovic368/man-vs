@@ -59,16 +59,17 @@
 	}
 	.image-with-text img {
 		width: 50%;
-		object-fit: cover; /* Added to maintain aspect ratio */
+		object-fit: cover;
 	}
 	.image-with-text .image-with-text__text {
 		width: 50%;
 		display: flex;
 		justify-content: center;
-		align-items: center;
 		flex-direction: column;
 		background-color: var(--primary);
 		gap: 16px;
+		padding-inline: 110px;
+		box-sizing: border-box;
 	}
 	.image-with-text--odd .image-with-text__text {
 		background-color: #e4f2fb;
@@ -76,7 +77,6 @@
 	.image-with-text .image-with-text__text h2 {
 		color: white;
 		margin: 0;
-		padding-inline: 110px;
 		font-size: 38px;
 		font-weight: 700;
 		line-height: 46px; /* 121.053% */
@@ -88,9 +88,9 @@
 	.image-with-text .image-with-text__text p {
 		color: white;
 		margin: 0;
-		padding-inline: 110px;
 		font-size: 18px;
 		font-weight: 400;
+		line-height: 24px;
 	}
 	.image-with-text--odd .image-with-text__text p {
 		color: #333b47;
@@ -107,20 +107,18 @@
 		.image-with-text .image-with-text__text {
 			width: 100%;
 			padding-block: 40px;
+			padding-left: 34px;
+			padding-right: 0;
 		}
 		.image-with-text .image-with-text__text h2 {
-			padding-left: 34px;
 			padding-right: 14px;
 			font-size: 32px;
 			line-height: 36px; /* 121.053% */
 			letter-spacing: -0.6px;
 		}
 		.image-with-text .image-with-text__text p {
-			color: white;
-			margin: 0;
-			padding-left: 34px;
 			padding-right: 34px;
-			font-size: 18px;
+			font-size: 16px;
 			font-weight: 400;
 		}
 		.image-with-text--odd .image-with-text__text p {
